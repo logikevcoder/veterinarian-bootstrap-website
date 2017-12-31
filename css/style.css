@@ -60,9 +60,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 	background-color: white;
 }
 
-header .navbar-collapse {
-	background-color: rgba(0,0,0,.5);
-}
+
 
 /*  Navbar Brand  */
 header .navbar-brand {
@@ -105,4 +103,11 @@ footer .navbar-default {
 .page h2 {
 	margin-bottom: 30px;
 	text-align: center;
+}
+
+
+@media only screen and ( max-width: 768px ) {
+	header .navbar-collapse.in {
+		background-color: rgba(0,0,0,.5);
+	}
 }
