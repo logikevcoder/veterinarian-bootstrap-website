@@ -1,4 +1,4 @@
-@import url(https://font-googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+ @import url(https://font-googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
 
 body {
 	padding-top: 50px;
@@ -15,21 +15,89 @@ h1, h2, h3, h4, h5, h6 {
 	
 }
 
-
-
 img {
 	max-width: 200px;
 }
 
-.navbar {
-	border-radius: 0;
+/*  HEADER NAVIGATION  */ 
+nav.navbar-default {
+	background-image:none;
+ 	background-color: transparent!important; 
+  	border-color: transparent;
 }
 
+
+header .navbar-default .navbar-nav a {
+	color: white;
+	padding: 5px 8px;
+	margin-top: 25px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+	color: #eec856;
+}
+
+header .navbar-default .navbar-nav .active a {
+	font-weight: 700;
+	color: #eec856;
+	background: transparent;
+	border-bottom: 4px solid #eec856;
+	text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+	color: #e15d5f;
+	background: transparent;
+	text-shadow: none;
+}
+
+/* NAVBAR-TOGGLE */
+header .navbar-toggle {
+	background-color: #279182;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+header .navbar-collapse {
+	background-color: rgba(0,0,0,.5);
+}
+
+/*  Navbar Brand  */
+header .navbar-brand {
+	background: url(../images/wisdompetlogo.svg);
+	background-repeat: no-repeat;
+	background-position: 15px 0;
+	height: auto;
+}
+
+header .navbar-brand h1 {
+	color: #fff;
+	margin: 0;
+	font-size: 1.8em;
+	font-weight: 400;
+	padding-left: 105px;
+}
+
+header .subhead {
+	font-family: "Roboto Slab", serif;
+	font-size: .6em;
+	display: block;
+	font-weight: 100;
+}
+
+/*  Footer Navigation  */
 footer .navbar-default {
 	background: transparent;
 	border: none;
 }
 
+.carousel {
+	margin-top: -50px;ww
+}
+
+/*  Page  */
 .page {
 	padding-top: 70px;
 }
