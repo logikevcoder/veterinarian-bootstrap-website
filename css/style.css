@@ -85,26 +85,173 @@ header .subhead {
 	font-weight: 100;
 }
 
-/*  Footer Navigation  */
-footer .navbar-default {
-	background: transparent;
-	border: none;
-}
-
+/* CAROUSEL */
 .carousel {
 	margin-top: -50px;ww
 }
 
-/*  Page  */
+/*  PAGES  */
 .page {
 	padding-top: 70px;
 }
+
 
 .page h2 {
 	margin-bottom: 30px;
 	text-align: center;
 }
 
+/* PAGE -- MISSION */
+#mission {
+	background-color: #e4d29d;
+	background-image: linear-gradient(to bottom, #eef08a, #819a2d);
+	border-top: solid 20px rgba(238, 200, 86, .5);
+}
+
+/* PAGE -- SERVICES */
+.service {
+	margin: 20px 0;
+	text-align: center;
+} 
+
+#services img.icon {
+	display: block;
+	width: 80px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+#services h3 {
+	margin-bottom: 10px;
+}
+
+
+/* PAGE -- STAFF */
+#staff {
+	background-color: #e4d29d;
+	background-image: linear-gradient(to bottom, #e4d29d, #cdae50);
+}
+
+.doctor {
+	margin: 10px 0;
+}
+
+.doctor h3 {
+	font-weight: 600;
+	font-size: 1.6em;
+	color: #6f4e36;
+	padding-bottom: 6px;
+}
+
+.doctor p {
+	font-size: .8em;
+}
+
+.doctor img {
+	width: 100%;
+}
+
+/* TESTIMONIALS */
+#testimonials {
+	padding: 0;
+}
+
+#testimonials h2 {
+	display: none;
+}
+
+#testimonials blockquote {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	min-height: 500px;
+	border-left: none;
+}
+
+#testimonials blockquote .quote {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 0 50px 0 0;
+	position: absolute;
+	bottom: 0;
+	font-weight: 400;
+	width: 75%;
+	padding: 20px 5%;
+}
+
+#testimonials blockquote .quote:hover {
+	background-color: rgba(239, 240, 196, 0.9);
+}
+
+#testimonials #janeh {
+  background: url(../images/testimonial-janeh.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials #johnb {
+  background: url(../images/testimonial-johnb.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials #mcphersons {
+  background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials #lorraines {
+  background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials .quote {
+	font-size: 1.2em;
+	line-height: 110%;
+	font-weight: 400;
+}
+
+#testimonials .quote .more, #testimonials .quote .customer {
+	opacity: 0;
+	font-size: 0;
+	line-height: 0;
+	padding-top: 10px;
+}
+
+#testimonials .quote:hover .more {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 100;
+	display: block;
+	opacity: 1;
+	font-size: .8em;
+	line-height: 120%;
+}
+
+#testimonials .quote:hover .customer {
+	display: block;
+	font-size: .7em;
+	text-align: right;
+}
+
+#testimonials .quote .intro::after {
+	content: '...';
+}
+
+#testimonials .quote:hover .intro::after {
+	content: '';
+}
+
+
+/*  FOOTER NAVIGATION */
+footer .navbar-default {
+	background: transparent;
+	border: none;
+}
+
+@media only screen 
+	and ( min-width: 450px )
+	and ( max-width: 768px ) {
+		.service p {
+			0 20%;
+		}
+}
 
 @media only screen and ( max-width: 768px ) {
 	header .navbar-collapse.in {
