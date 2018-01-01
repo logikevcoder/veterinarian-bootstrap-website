@@ -85,9 +85,58 @@ header .subhead {
 	font-weight: 100;
 }
 
+.inbody {
+	background-color: rgba(0,0,0, .6;);
+}
+
 /* CAROUSEL */
 .carousel {
-	margin-top: -50px;ww
+	margin-top: -50px;
+}
+
+/* CAROUSEL FADE IN  */
+.carousel.fade {
+	opacity: 1;
+}
+
+/* make all the photos invisible */
+.carousel.fade .item {
+	transition: opacity ease-out .7s;
+	left: 0;
+	opacity: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	display: block;
+}
+
+
+.carousel.fade .item:first-child {
+	top: auto;
+	opacity: 0;
+	position: relative;
+}
+
+/* show which one is active */
+.carousel.fade .item.active {
+	opacity: 1;
+}
+
+.carousel-control {
+	opacity: 0;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none; 
+}
+
+#featured .item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
 }
 
 /*  PAGES  */
@@ -108,6 +157,10 @@ header .subhead {
 	border-top: solid 20px rgba(238, 200, 86, .5);
 }
 
+#mission .content {
+	padding-bottom: 50px;
+}
+
 /* PAGE -- SERVICES */
 .service {
 	margin: 20px 0;
@@ -123,6 +176,10 @@ header .subhead {
 
 #services h3 {
 	margin-bottom: 10px;
+}
+
+#services .content {
+	margin-bottom: 50px
 }
 
 
@@ -238,12 +295,44 @@ header .subhead {
 	content: '';
 }
 
+/* FOOTER */
+footer {
+	background-color: #586d74;
+	color: white;
+	font-size: .8em;
+	padding: 20px 0 40px 0;
+}
+
+footer a {
+	color: #e0e6ae;
+}
+
+footer a:hover {
+	color: #eec856 !important;
+}
+
+footer .phone {
+	font-size: 1.4em;
+	font-weight: 700;
+	color: #e0e6ae;
+}
+
+footer .navbar-default {
+	background-color: transparent;
+	border: none;
+	margin-right: 40px;
+}
+
+footer .navbar-nav>li a {
+	padding-top: 0;
+	padding-bottom: 0;
+	text-decoration: underline;
+	color: eec856 !important;
+}
 
 /*  FOOTER NAVIGATION */
-footer .navbar-default {
-	background: transparent;
-	border: none;
-}
+
+
 
 @media only screen 
 	and ( min-width: 450px )
