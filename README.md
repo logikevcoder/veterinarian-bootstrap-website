@@ -2,6 +2,8 @@
 
 ## This is a mock website for a fake veterinarian company.Built with Bootstrap
 
+ https://logikevcoder.github.io/veterinarian-bootstrap-website/
+
 ### Features
 * Contains a dynamic carousel that randomly chooses an image, and fades it in to display
 * Also randomly generates the selecting dots at the bottom of the carousel depending on the amount of images
